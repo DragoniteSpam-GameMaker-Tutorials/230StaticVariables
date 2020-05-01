@@ -16,6 +16,8 @@ function scr_rotate_to_point(xx, yy, instance) {
 }
 
 function scr_count_stuff() {
+    // the value in static variables persists between calls to the
+    // function they belong to
     static times_you_did_stuff = 0;
     times_you_did_stuff++;
     show_debug_message(times_you_did_stuff);
